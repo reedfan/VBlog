@@ -26,19 +26,19 @@ export default new Router({
     }, {
       path: '/home',
       component: Home,
-      name: '文章管理',
+      name: '任务管理',
       iconCls: 'fa fa-file-text-o',
       children: [
         {
-          path: '/articleList',
-          name: '文章列表',
+          path: '/cateList',
+          name: '分类列表',
           component: ArticleList,
           meta: {
             keepAlive: true
           }
         }, {
-          path: '/postArticle',
-          name: '发表文章',
+          path: '/',
+          name: '任务列表(已审核)',
           component: PostArticle,
           meta: {
             keepAlive: false
